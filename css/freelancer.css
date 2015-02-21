@@ -103,6 +103,11 @@ header .intro-text .name {
     font-weight: 700;
 }
 
+header .intro-text .education {
+    font-size: 2em;
+    font-weight: 300;
+}
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
@@ -447,4 +452,11 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#profile_pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius:100%;
 }
