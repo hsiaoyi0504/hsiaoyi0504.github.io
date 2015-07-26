@@ -255,9 +255,21 @@ section.success {
 	font-size: 20px;
 	border-color: #f0ffff;
 	border-width:2px;
-	width: 170px;
+	width: 13%;
 	text-align:center;
 	margin:auto;
+    display:inline-block;
+}
+
+#linkedin-button {
+    color: #f0ffff;
+    font-size: 20px;
+    border-color: #f0ffff;
+    border-width:2px;
+    width: 13%;
+    text-align:center;
+    margin:auto;
+    display: inline-block;
 }
 
 @media(min-width:767px) {
