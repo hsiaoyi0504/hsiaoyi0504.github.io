@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>KNIME-practice</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>KNIME-practice</h1>
+		<p>brief example of building a workflow</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>KNIME</h2>
+		<h3>A demo of buiding a KNIME workflow</h3>
+		<p>Yi Hsiao</br>
+			2015/09/15</p>
+		<!--<img src="pictures/cover.jpg" alt=""> -->
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		
+		<style>
+			#Cover {
+				background-color: #FFF;
+			}
+			#Cover h2 {
+				margin:120px 0 0;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover h3{
+				text-align: center;
+				margin: 50px 0 0;
+			}
+			#Cover p {
+				margin:100px 0 0;
+				text-align:center;
+				font-style:italic;
+				font-size:20px;
+				}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Introduction</h2>
+		<ul>
+			<li>You can review today's demo materials through this presentation and document <a href="https://github.com/hsiaoyi0504/research/blob/master/KNIME_pratice.md">here</a></li>
+			<li>I will show you how to build a workflow related to k-means clustering in KNIME</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Iris Dataset</h2>
+		<ul>
+			<li>A multivariate data set introduced by Ronald Fisher in 1936</li>
+    		<li>The dataset consists of 50 samples from each of three species of Iris flowers (Iris setosa, Iris virginica and Iris versicolor)</li>
+    		<li>Four attributes were measured from each sample. These attributes are the length and the width of sepal and petal, in centimeters.</li>
+    		<li>There are no missing values</li>
+    		<li>Based on the combination of the four features most Machine Learning methods can learn to distinguish among the irises
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>K-means Clustering</h2>
+		<ul>
+			<li>Clustering</li>
+			<li>Use an iterative refinement technique</li>
+			<li>Given an initial set of k means, the algorithm proceeds by alternating between two steps:
+				<ul>
+					<li>Assignment step</li>
+					<li>Update step</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>k-means Clustering</h2>
+		<ul><li>Graph Demonstration</li></ul>
+		<img src="pictures/kmeans.jpg" id="k-means"></img>
+		<style>
+			#k-means {
+				margin: 0% 0% 0%;
+				width:100%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Let's Demo!</h2>
+		<ul><li>The finished workflow would look like this</li></ul>
+		<img src="pictures/workflow.png" id="workflow"></img>
+		<style>
+			#workflow {
+				margin: -7% 0% 0%;
+				width:100%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide cover" id="Picture"><div>
+		<h2>Thank you for your listening</h2>
+		<img src="pictures/cover.jpg" alt="">
+		<style>
+			#Picture h2 {
+				margin: 100px 0 0;
+				color:#FFF;
+			}
+		</style>
+	</div></section>
+		<section class="slide"><div>
+		<h2>Appendix</h2>
+		<ul><li>The finished workflow would look like this</li></ul>
+	</div></section>
+	<!--
+	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+	-->
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="../../shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
