@@ -47,7 +47,7 @@
 	<section class="slide"><div>
 		<h2>Introduction</h2>
 		<ul>
-			<li>You can review today's demo materials through this presentation and document <a href="https://github.com/hsiaoyi0504/research/blob/master/KNIME_pratice.md">here</a></li>
+			<li>You can review today's demo materials through this presentation and document<a href="https://github.com/hsiaoyi0504/research/blob/master/KNIME_pratice.md">here</a></li>
 			<li>I will show you how to build a workflow related to k-means clustering in KNIME</li>
 		</ul>
 	</div></section>
@@ -87,6 +87,20 @@
 		</style>
 	</div></section>
 	<section class="slide"><div>
+		<h2 id="header2">GUI Overview</h2>
+		<img src="pictures/KNIME-overview.png" id="overview"></img>
+		<style>
+			#header2 {
+				margin: -10% 0% 0%;
+			}
+			#overview {
+				margin: 0% 0% 0%;
+				width: 95%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
 		<h2>Let's Demo!</h2>
 		<ul><li>The finished workflow would look like this</li></ul>
 		<img src="pictures/workflow.png" id="workflow"></img>
@@ -108,9 +122,38 @@
 			}
 		</style>
 	</div></section>
-		<section class="slide"><div>
+	<section class="slide"><div>
 		<h2>Appendix</h2>
-		<ul><li>The finished workflow would look like this</li></ul>
+		<ul>
+			<li>There are traffic light signal under every node:</li>
+			<ul>
+				<li>Red: need configuration</li>
+				<li>Yellow: ready to be executed</li>
+				<li>Green: finished</li>
+			</ul>
+		</ul>
+		<img src="pictures/red.png" alt="" id="red">
+		<img src="pictures/yellow.png" alt="" id="yellow">
+		<img src="pictures/green.png" alt="" id="green">
+		<style>
+		#red {
+				margin: -5% 0% 0%;
+				width:20%;
+    			height: auto;
+    			float: left;
+		}
+		#yellow {
+				margin: -5% 0% 0%;
+				width: 30%;
+				float: left;
+    	}
+		#green {
+				margin: -4% 0% 0%;
+				width:20%;
+    			height: auto;
+    			float: left;
+			}
+		</style>
 	</div></section>
 	<!--
 	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
