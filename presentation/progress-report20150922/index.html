@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Progress Report 20150922</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Progress Report 20150922</h1>
+		<p>building CypRules system workflow</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Progress Report</h2>
+		<h3>building CypRules system workflow</h3>
+		<p>Yi Hsiao</br>
+			2015/09/22</p>
+		<!--<img src="pictures/cover.jpg" alt=""> -->
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		
+		<style>
+			#Cover {
+				background-color: #FFF;
+			}
+			#Cover h2 {
+				margin:120px 0 0;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover h3{
+				text-align: center;
+				margin: 50px 0 0;
+			}
+			#Cover p {
+				margin:100px 0 0;
+				text-align:center;
+				font-style:italic;
+				font-size:20px;
+				}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Features based on</h2>
+		<ul>
+			<li>Mold2</li>
+			<li>PaDEL-Descriptor</li>
+			<li>PubChem 2D-fingerprints</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>KNIME supporting functionalities</h2>
+		<ul>
+			<li>Mold2 => Enalos Mold2 node <a href="http://www.novamechanics.com/Mold2.php">Link</a></li>
+    		<li>PaDEL-Descriptor => PaDEL PaDEL-Descriptor node <a href="http://www.yapcwsoft.com/dd/padeldescriptor/">Link</a></li>
+			<li>PubChem 2D-fingerprints => CDK Fingerprints node</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Current Progress</h2>
+		<ul>
+			<li>Mold2 => try other method</li>
+			<li>PaDEL-Descriptor => successed</li>
+			<li>PubChem 2D-fingerprints => successed</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2 id="header2">Enalos Mold2 node</h2>
+		<ul>
+			<li>Some cross-platform issues (also for many KNIME nodes)</br>
+				- Native node (X)
+				- Tried bash node (X,also cross-platform issue)
+				- Create new node (?)
+			</li>
+			<li>Not very good I/O</li>
+		</ul>
+		<img src="pictures/mold2.png" id="mold2"></img>
+		<style>
+			#mold2{
+				margin: -5% 0% 0%;
+				width: 90%;
+				height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2 id="header2">PaDEL-Descriptor node</h2>
+		<ul>
+			<li>Compatibility issue</br>
+			-It is not possible to use the CDK "Molecule to CDK" node as input to the "PaDEL-Descriptor" node as the CDK extension uses CDK 1.5.x whereas PaDEL-Descriptor uses CDK 1.4.x. Hence, there are some compatibility issues which will only be resolved when PaDEL-Descriptor updates to CDK 1.5.x, which will only happen when CDK 1.5.x becomes the new stable release
+			</li>
+		</ul>
+		<style>
+			#mold2{
+				margin: -5% 0% 0%;
+				width: 90%;
+				height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Demo time!</h2>
+		<img src="pictures/demo.jpg" id="demo"></img>
+		<style>
+			#demo {
+				margin: -7% 0% 0%;
+				width:50%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Future work</h2>
+		<ul>
+			<li>Mold2 descriptors => build new node or java snippet integration</li>
+			<li>Clearing filter before/after the descriptor calculations</li>
+			<li>I/O of rules => try built-in nodes</li>
+			<li>rules => try built-in nodes</li>
+			<li>C5.0 algorithm => may need new node or script integration</li>
+		</ul>
+		<style>
+			#demo {
+				margin: -7% 0% 0%;
+				width:50%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide cover" id="Picture"><div>
+		<h2>Thank you for your listening</h2>
+		<img src="pictures/cover.jpg" alt="">
+		<style>
+			#Picture h2 {
+				margin: 100px 0 0;
+				color:#FFF;
+			}
+		</style>
+	</div></section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="../../shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
