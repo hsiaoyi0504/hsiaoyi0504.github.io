@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Rendering Final Project</title>
+<link rel="stylesheet" type="text/css" href="simple.css">
+</head>
+<BODY text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h2>Digital Image Synthesis, Fall 2012</h2>
+<h2>Final Project: Spectral Rendering</h2>
+<hr>
+<p><font color="#0000A0">R01943050 曾任培</font></p>
+<p><font color="#0000A0">R01942068 賴威昇</font></p>
+<p>Date submitted: <font color="#000090">January 18, 2013</font></p>
+<p>Code emailed: <font color="#000090">January 18, 2013</font></p>
+<hr>
+<p>&nbsp;</p>
+<h3>Representative Image</h3>
+<p align="left"><font color="#000000">
+  <div style="text-align:center">
+    <img border="0" vspace=10 src="image/prism.png"><br>
+    Fig. Color dispersion by a prism of V-number 10
+  </div>
+</p>
+<p>&nbsp;</p>
+
+
+<h3>Project Description</h3>
+<p align="left"><font color="#000000">
+<ol>
+  Our target is to render color dispersion effects, including refracted rainbows and camera color aberration. This is achieved by simulating rays of different wavelengths integrating radiance over them. We also provide a common dispersion measure for user to customize the glass material and realistic camera lens.
+</ol>
+</p>
+<p>&nbsp;</p>
+
+
+<h3>Implementation</h3>
+<p align="left"><font color="#000000">
+<ol>
+  <li><b>Spectral rendering</b></li>
+  Colors are spectral power distributions over different wavelengths. In rendering systems, a color can be represented by RGB or spectral samples of several wavelengths, and PBRT supports both. However, PBRT renders all components of spectrum together, that means each component, which is one or some spectral values of some certain wavelengths, cannot have independant behaviors like refraction by different indices.<br>
+  We modified PBRT system to render one spectral value of one sampled wavelength in a ray tracing process. The key algorithm is the conversion between RGB and sampled spectral values, which has already been implemented in PBRT. The input colors like lights and materials are sampled at current chosen wavelengths. The ray traced and shaded values are converted back to colors and integrated.<br>
+  Our new system supports direct lighting, path tracing, and photon mapping, described as follows:<br>
+  <ul>
+    <li>Direct lighting / Path tracing</li>
+    First the camera generates rays with wavelength sample values. For each bouncing and shading, the material BSDFs and light irradiances are sampled by the wavelengths attached to rays.
+    <li>Photon mapping</li>
+    In the preprocess photons of different wavelengths are spreaded. For shading we gather the photons of wavelengths closed to current sampled wavelength (we set the difference smaller than 5nm).
+  </ul><br>
+  <li><b>Glass+</b></li>
+  Our glass material supports color dispersion, specified by refractive index and the Abbe number (the V-number). Abbe number is commonly used for a measure of glass dispersion, given by<br>
+  <div style="text-align:center">
+    <img border="0" vspace=10 hspace=10 align="middle" src="image/v.png">
+  </div>
+  where the n's are refractive indices at wavelengths of the Fraunhofer d-, F-, and C- spectral lines (587.6nm, 486.1nm, and 656.3nm respectively). Low V indicates high dispersion. Typical values range from 20 to 90.<br>
+  To calculate the refractive index of each wavelength, we fit the refractive index to wavelength curve by the two-term Cauchy's equation<br>
+  <div style="text-align:center">
+    <img border="0" vspace=10 hspace=10 align="middle" src="image/cauchy.png">
+  </div>
+  given the refractive index at d-spectral line and the V-number.<br><br>
+  <li><b>RealisticCamera+</b></li>
+  We further improve the realistic camera model to be more realistic, handling chromatic aberration effects. In lens data description, a column specifying V-number of each lens is added. The camera then generates refractive rays according to attached wavelengths.<br>
+  We had tested some of the lens in homework 2. The D-Gauss lens set minimizes chromatic aberration well. The Telephoto lens set zooms far, but suffers from this artifact.<br>
+</ol>
+</p>
+<p>&nbsp;</p>
+
+
+<h3>Result Images</h3>
+<p align="left"><font color="#000000">
+  <div style="text-align:center">
+    <img border="0" vspace=10 src="image/sph.png"><br>
+    Fig. Color dispersion by a sphere<br>
+  </div><br>
+  <div style="text-align:center">
+    <img border="0" vspace=10 src="image/cyl.png"><br>
+    Fig. Color dispersion by a cylinder<br>
+  </div><br>
+  <div style="text-align:center">
+    <img border="0" vspace=10 src="image/dof-dragons.dgauss.png" width=600><br>
+    Fig. Spectral rendered D-Gauss lens<br>
+  </div><br>
+  <div style="text-align:center">
+    <img border="0" vspace=10 src="image/dof-dragons.telephoto.png"><br>
+    Fig. Color aberration of telephoto lens<br>
+  </div><br>
+</font></p>
+<p>&nbsp;</p>
+
+<h3>Reference</h3>
+<p align="left"><font color="#000000">
+<ol>
+  [1] Physically Based Rendering: From Theory to Implementation, Matt Pharr and Greg Humphreys, 2nd ed, Morgan Kaufmann, 2010<br>
+  [2] <i>gpusppm</i>, code from "Stochastic Progressive Photon Mapping, T. Hachisuka and H. W. Jensen, ACM Transactions on Graphics (SIGGRAPH Asia 2009), 2009"<br>
+  [3] Craig Kolb, Don Mitchell and Pat Hanrahan, A Realistic Camera Model for Computer Graphics, SIGGRAPH 1995<br>
+  [4] Iman Sadeghi, Adolfo Muñoz, Philip Laven, Wojciech Jarosz, Francisco Seron, Diego Gutierrez, Henrik Wann Jensen. Physically-based Simulation of Rainbows. ACM Transactions on Graphics (Presented at ACM SIGGRAPH 2012), 31(1):3:1–3:12, February 2012<br>
+  [5] http://en.wikipedia.org/wiki/Abbe_number<br>
+  [6] http://en.wikipedia.org/wiki/Cauchy's_equation<br>
+</ol>
+</p>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>
