@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>KNIME</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="../../shower/themes/bright/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>KNIME</h1>
+		<p>brief introduction</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>KNIME</h2>
+		<p>Yi Hsiao</br>
+			2015/09/08</p>
+		<!--<img src="pictures/cover.jpg" alt=""> -->
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		
+		<style>
+			#Cover {
+				background-color: #FFF;
+			}
+			#Cover h2 {
+				margin:120px 0 0;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover p {
+				margin:100px 0 0;
+				text-align:center;
+				font-style:italic;
+				font-size:20px;
+				}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>KNIME</h2>
+		<ul>
+			<li>The Konstanz Information Miner</li>
+			<li>Open source framework for data mining</li>
+			<li>Written in Java, its graphical workflow editor is implemented as an <a href="https://www.eclipse.org/home/index.php">Eclipse</a> plug-in => cross-platform</li>
+			<li>GUI</li>
+			<li>Intuitively drag and drop</li>
+		</ul>
+		<p class="note" id="note1">P.S. Eclipse is famous for its Java IDE and an impressive collection of add-on tools for software developers</p>
+		<style>
+			#note1 {
+				font-size:20px;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Applications</h2>
+		<ul>
+			<li>Provide a wide set of functionalities for many different common tasks, such as following:
+				<ul>
+					<li>Data mining</li>
+					<li><strong>Cheminformatics</strong></li>
+					<li>Image analysis</li>
+					<li>Text mining</li>
+					<li>Deep sequencing<br>
+						...</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Basic functionalities</h2>
+		<ul>
+			<li>Can be applied for many different type of analysis, such as following:
+				<ul>
+					<li>Input/Output</li>
+ 					<li>Data processing</li>
+ 					<li>Statistics</li>
+				 	<li>Data mining</li>
+				 	<li>Visulizaiton<br>
+				 		...</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Let's take a look</h2>
+		<img src="pictures/KNIME.png" id="KNIME"></img>
+		<style>
+			#KNIME {
+				margin: -5% 20% 20%;
+				width:60%;
+    			height: auto;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Brief Concepts</h2>
+		<ul>
+			<li>Basic components
+				<ul>
+					<li>Node: data processing unit</li>
+					<li>Edge: data flow, can branch at any point</li>
+				</ul>
+			</li>
+			<li>The constructed workflow can be treated as a block diagram</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Practical Aspects</h2>
+		<ul>
+			<li>Basic data manipulations are implemented as built-in nodes</li>
+			<li>As KNIME is not focused on data analysis of high-thriughtput experiments, it lacks common methods necessary for screen mining</li>
+			<li>Fortunately, communities have developed many useful extensions
+				<ul>
+					<li>RDKit</li>
+					<li>Vernalis</li>
+					<li>CDK</li>
+					<li>Indigo<br>
+						...</li>
+					<!--
+					<li>Erlwood</li>
+					<li>EMBL-EBL Nodes</li>
+					<li>Chemical Identifier Resolver</li>
+					<li>Enalos</li>
+					<li>CheS-Mapper</li>
+					<li>OCHEM Nodes</li>
+					<li>Lhasa Nodes</li>-->
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Practical Aspects (cont'd)</h2>
+		<ul>
+			<li>If the worst comes to the worst, we can also develop custom nodes</li>
+			<li>As far as I know, there are three ways to acheive this:
+				<ul>
+					<li>Natively, extend the basic Node classes in Java</li>
+					<li>Develope the node under R, use the built-in node to execute R scripts</li>
+					<li>Utilize the scripting integration framewirk for KNIME <strong>(recommended)</strong> <a href="https://github.com/knime-mpicbg/knime-scripting">link</a><br>
+						*supported programming languages: R, python, Matlab, Groovy</li>
+				</li>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Appendix : Extensions</h2>
+		<ul id="left">
+			<li>RDKit</li>
+			<li>Vernalis</li>
+			<li>CDK</li>
+			<li>Indigo</li>
+			<li>Erlwood</li>
+			<li>EMBL-EBL Nodes</li>
+		</ul>
+		<ul id="right">
+			<li>Chemical Identifier Resolver</li>
+			<li>Enalos</li>
+			<li>CheS-Mapper</li>
+			<li>OCHEM Nodes</li>
+			<li>Lhasa Nodes</li>
+			<li>Free Marvin Chemistry Extensions</li>
+		</ul>
+		<ul class="bottom"><li id="summary">An summary of these extensions can be found <a href="https://github.com/hsiaoyi0504/research/blob/master/KNIME-Cheminformatics.md">here</a></li></ul>
+	<style>
+		#left{
+			float:left;
+			margin-right:20%;
+			margin-bottom: 1%;
+		}
+		#right{
+			float:left;
+		}
+		.bottom:{
+			clear:left;
+		}
+		#summary{
+			clear:left;
+			font-size: 30px;
+		}
+	</style>
+	</div></section>
+	<section class="slide cover" id="Picture"><div>
+		<h2>Thank you for<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your listening</h2>
+		<img src="pictures/picture.jpg" alt="">
+		<style>
+			#Picture h2 {
+				margin: 100px 0 0;
+				color:#FFF;
+			}
+		</style>
+	</div></section>
+	<!--
+	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+	-->
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="../../shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
