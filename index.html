@@ -15,8 +15,8 @@
 
     <link rel="stylesheet" href="css/main.css">
 <!-- For offline edit -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!--     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
 
     <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
     <link rel="stylesheet" href="css/scrolling-nav.css">
@@ -29,6 +29,10 @@
     
     <link rel="shortcut icon" href="images/profile.png">
     
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -90,9 +94,9 @@
             <div class="spacer"></div>
             <div class="info-list">
               <div>M.S. student</div>
-              <div><a href="http://www.bebi.ntu.edu.tw/" target="blank">Graduate Institute of Biomedical Electronics and Bioinformatics</a></div>
-              <div><a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University, Tapei, Taiwan</a></div>
-              <div class='email'><b>r04945027@ntu.edu.tw</b> or <b>hsiaoyi0504@gmail.com</b></div>
+              <div><a href="http://www.bebi.ntu.edu.tw/" target="blank">Graduate Institute of Biomedical Electronics and Bioinformatics (BEBI)</a></div>
+              <div><a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University (NTU), Tapei, Taiwan</a></div>
+              <div class='email'><a href="mailto:r04945027@ntu.edu.tw"><b>r04945027@ntu.edu.tw</b></a> or <a href="mailto:hsiaoyi0504@gmail.com"><b>hsiaoyi0504@gmail.com</b></a></div>
             </div>
             <div class="social-links">
               <a href="https://tw.linkedin.com/in/yi-hsiao-12bbba101" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -116,7 +120,7 @@
             <hr>
             <div class="spacer"></div>
             <p>
-              I am a first-year master student in BEBI at NTU under the advisement of Prof. <a href="http://cmdm.tw/index.php/advisor" target="blank">Yu-Feng Tseng</a>.
+              I am a second-year master student in BEBI at NTU under the advisement of Prof. <a href="http://cmdm.tw/index.php/advisor" target="blank">Yu-Feng Tseng</a>.
             </p>
             <p>
               My research interests include <b>Bioinformatics</b>, <b>Cheminformatics</b> and <b>Machine Learning</b>. Here is my <a href="cv_20160625.pdf" target="blank"><b>CV</b></a>.
@@ -151,11 +155,43 @@
         <h2>Work Experience</h2>
         <hr>
         <div class="spacer"></div>
-        
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a href="http://www.ntu.edu.tw/english/index.html" target="_blank">
+              <img src="images/ntu.png" class="img-responsive work-img">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="company"><i>NTU, Taipei, Taiwan</i></div>
+            <div class="type"></div>
+            <div class="title"><b>Teaching Assistant (Python Programming)</b></div>
+            <div class="date">Oct. 2016 - Present</div>
+          </div>
+        </div>
+
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+             <a href="http://www.ntu.edu.tw/english/index.html" target="_blank">
+              <img src="images/ntu.png" class="img-responsive work-img">
+            </a>
+<!--             <a href="https://ntudorm.prince.com.tw/News_List.aspx" target="_blank">
+              <img src="images/logo_prince.png" class="img-responsive work-img">
+            </a> -->
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="company"><i>NTU, Taipei, Taiwan</i></div>
+            <div class="type"></div>
+            <div class="title"><b>Webmaster</b></div>
+            <div class="date">Aug. 2016 - Present</div>
+          </div>
+        </div>
+
         <div class="row item">
           <div class="col-md-4 col-sm-6 col-xs-12 item-img">
             <a href="http://www.meridigen.com/en/" target="_blank">
-              <img src="images/meridigen.jpg" class="img-responsive">
+              <img src="images/meridigen.jpg" class="img-responsive work-img">
             </a>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 item-info">
@@ -169,7 +205,7 @@
         <div class="row item">
           <div class="col-md-4 col-sm-6 col-xs-12 item-img">
             <a href="http://www.mediatek.com/en/" target="_blank">
-              <img src="images/mediatek.jpg" class="img-responsive">
+              <img src="images/mediatek.jpg" class="img-responsive work-img">
             </a>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 item-info">
@@ -181,12 +217,13 @@
         </div>
         <div class="row item">
           <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-              <img src="images/lasocare.jpg" class="img-responsive">
+              <img src="images/lasocare.jpg" class="img-responsive work-img">
             </a>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 item-info">
             <div class="company"><i>LASOCARE, Taipei, Taiwan</i></div>
             <div class="title"><b>Biomaterial Engineer</b></div>
+            <div class="date">Jan. 2013 - Jul. 2013</div>
           </div>
         </div>
       </div> <!-- end of work experience -->
@@ -198,9 +235,89 @@
         <h2>Projects</h2>
         <hr>
         <div class="spacer"></div>
-
-        <div class="row">        
+        <div class="col-md-4 col-sm-4 col-xs-12 proj">
+            <div class="text-center">
+              <a href="https://cchlabblog.wordpress.com/">
+                <img src="images/cch_lab.jpg" class="img-thumbnail img-responsive">
+              </a>
+            </div>
+            <div class="proj-info">
+              <h4 class="proj-title">CCH Lab Website</h4>
+              <div class="date">Aug. 2016</div>
+              <div class="tag">
+                <span class="label label-success">Website</span>
+              </div>
+              <div><i class="fa fa-globe fa-fw"></i><a href="https://cchlabblog.wordpress.com/" target="_blank">Website</a></div>
+              <div>The lab website of  (CCH) lab.</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 proj">
+            <div class="text-center">
+              <a href="https://github.com/hsiaoyi0504/ML2015Final">
+                <img src="images/ML_framework.jpg" class="img-thumbnail img-responsive">
+              </a>
+            </div>
+            <div class="proj-info">
+              <h4 class="proj-title">Predcit MOOC Dropout</h4>
+              <div class="date">Oct. 2015 - Jan. 2016</div>
+              <div class="tag">
+                <span class="label label-success">Class Project</span>
+                <span class="label label-primary">Python</span>
+                <span class="label label-primary">MATLAB</span>
+              </div>
+              <div>
+                <i class="fa fa-users fa-fw"></i>
+                <a href="http://stmharry.github.io/" target="_blank">Tzu-Ming Harry Hsu</a>, <a href="https://github.com/xtype0x" target="_blank">Li-Yuan Liu</a>
+              </div>
+              <div><i class="fa fa-github-square" aria-hidden="true"></i>  <a href="https://github.com/hsiaoyi0504/ML2015Final" target="_blank">Github Repo</a></div>
+              <div>Using data from a Massive Open Online Course (MOOC) platform, which contains information of many courses and students to predict whether a student will drop a course that she/he enrolled in.</div>
+            </div>
+          </div>
           <div class="col-md-4 col-sm-4 col-xs-12 proj">
+            <div class="text-center">
+              <a href="http://cmdm-lab.github.io/home.html">
+                <img src="images/logo.png" class="img-thumbnail img-responsive">
+              </a>
+            </div>
+            <div class="proj-info">
+              <h4 class="proj-title">CMDM Lab Website</h4>
+              <div class="date">Jan. 2016 - Present</div>
+              <div class="tag">
+                <span class="label label-success">Website</span>
+              </div>
+              <div>
+                <i class="fa fa-users fa-fw"></i>
+                <a href="https://github.com/EvelynLiu" target="_blank">Lu-Chi Liu</a>
+              </div>
+              <div><i class="fa fa-globe fa-fw"></i><a href="http://cmdm-lab.github.io/home.html" target="_blank">Website</a></div>
+              <div>The lab website of Computational Molecular Design and Metabolomics (CMDM) lab.</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 proj">
+            <div class="text-center">
+              <a href="http://2014.igem.org/Team:NTU_Taida">
+                <img src="images/igem.jpg" class="img-thumbnail img-responsive">
+              </a>
+            </div>
+            <div class="proj-info">
+              <h4 class="proj-title">Skin Guardian</h4>
+              <div class="date">Jan. 2014 - Oct. 2014</div>
+              <div class="tag">
+                <span class="label label-success">Competition</span>
+                <span class="label label-primary">Synthetic Biology</span>
+                <span class="label label-primary">MATLAB</span>
+              </div>
+              <div>
+                <i class="fa fa-users fa-fw"></i>
+                <a href="http://2014.igem.org/Team:NTU_Taida/TEAM_MEMBER">NTU-Taida</a>
+                 Team
+              </div>
+              <div><i class="fa fa-globe fa-fw"></i><a href="http://2014.igem.org/Team:NTU_Taida" target="_blank">Website</a></div>
+              <div>A Synthetic Biology project of <a href="http://igem.org/Main_Page">iGEM</a> competition. </div>
+            </div>
+          </div> 
+        <div class="row">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-12 proj">
             <div class="text-center">
               <a href="https://github.com/hsiaoyi0504/ML2015Final">
                 <img src="images/ML_framework.jpg" class="img-thumbnail img-responsive">
@@ -264,7 +381,7 @@
               <div><i class="fa fa-globe fa-fw"></i><a href="http://2014.igem.org/Team:NTU_Taida" target="_blank">Website</a></div>
               <div>A Synthetic Biology project of <a href="http://igem.org/Main_Page">iGEM</a> competition. </div>
             </div>
-          </div> 
+          </div>  -->
         </div>
 
       </div> <!-- end of Projects -->
@@ -462,12 +579,6 @@
     <script src="js/scrolling-nav.js"></script>
     <script src="js/mfp.js"></script>
     <script src="js/main.js"></script>
-
-    <!--
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    -->
     
   </body>
 </html>

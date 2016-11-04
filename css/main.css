@@ -90,9 +90,14 @@ a:hover{
   margin: 0px 0px 0px;
 }
 
-.edu-img {
-  margin: 0px;
+
+.work-img {
+  width: 100%;
+  /*height: 100%;*/
 }
+/*.edu-img {
+  margin: 0px;
+}*/
 
 .info-list{
   /*float: left;*/
