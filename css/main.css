@@ -324,8 +324,3 @@ hr {
 /* navbar fade effect */
 .navbar-fixed-top { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s;}
 .navbar-fixed-top.opaque { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s; }
-
-
-ck {
-  margin-top: 1em;
-}
