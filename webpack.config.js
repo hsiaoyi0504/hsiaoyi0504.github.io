@@ -24,9 +24,6 @@ module.exports = {
         path.resolve(nodeModulesPath, 'jquery-migrate/dist/jquery-migrate.js'),
         path.resolve(nodeModulesPath, 'bootstrap/dist/js/bootstrap.js')
       ],
-      attributes: {
-        async: true
-      }
     }),
     new ConcatPlugin({
       uglify: true,
@@ -39,9 +36,6 @@ module.exports = {
         path.resolve(jsFilesPath, 'scrolling-nav.js'),
         path.resolve(jsFilesPath, 'main.js')
       ],
-      attributes: {
-        async: true
-      }
     })
   ]
 }
