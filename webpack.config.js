@@ -1,14 +1,16 @@
 const ConcatPlugin = require('webpack-concat-plugin');
+const DisableOutputWebpackPlugin = require('disable-output-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   entry: './js/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js' // this file will not be used
+    filename: 'bundle.js' // this file will be removed by disable output webpack plugin
   },
   mode: 'production',
   plugins: [
+    new DisableOutputWebpackPlugin(),
     new ConcatPlugin({
       uglify: true,
       sourceMap: false,
