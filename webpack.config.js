@@ -37,5 +37,8 @@ module.exports = {
         path.resolve(jsFilesPath, 'main.js')
       ],
     })
-  ]
+  ],
+  module: {
+    noParse: [/\.js$/] // use noParse to accelerate
+  }
 }
