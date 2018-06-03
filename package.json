@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "python3 -m http.server",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
