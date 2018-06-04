@@ -2,8 +2,8 @@ const ConcatPlugin = require('webpack-concat-plugin');
 const DisableOutputWebpackPlugin = require('disable-output-webpack-plugin');
 const path = require('path');
 
-nodeModulesPath = path.resolve(__dirname, 'node_modules');
-jsFilesPath = path.resolve(__dirname, 'js');
+const nodeModulesPath = path.resolve(__dirname, 'node_modules');
+const jsFilesPath = path.resolve(__dirname, 'js');
 
 module.exports = {
   entry: path.resolve(__dirname, 'js/main.js'),
@@ -36,9 +36,9 @@ module.exports = {
         path.resolve(jsFilesPath, 'scrolling-nav.js'),
         path.resolve(jsFilesPath, 'main.js')
       ],
-    })
+    }),
   ],
   module: {
     noParse: [/\.js$/] // use noParse to accelerate
   }
-}
+};
