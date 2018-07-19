@@ -21,6 +21,7 @@ module.exports = {
       fileName: 'header.min.js',
       filesToConcat: [
         path.resolve(nodeModulesPath, 'jquery/dist/jquery.js'),
+        path.resolve(nodeModulesPath, 'popper.js/dist/popper.js'),
         path.resolve(nodeModulesPath, 'jquery-migrate/dist/jquery-migrate.js'),
         path.resolve(nodeModulesPath, 'bootstrap/dist/js/bootstrap.js')
       ],
@@ -31,7 +32,7 @@ module.exports = {
       name: 'body',
       fileName: 'body.min.js',
       filesToConcat: [
-        path.resolve(nodeModulesPath, 'jquery.easing/jquery.easing.1.3.js'),
+        path.resolve(nodeModulesPath, 'jquery.easing/jquery.easing.js'),
         path.resolve(nodeModulesPath, 'magnific-popup/dist/jquery.magnific-popup.js'),
         path.resolve(jsFilesPath, 'scrolling-nav.js'),
         path.resolve(jsFilesPath, 'main.js')
