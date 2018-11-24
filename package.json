@@ -6,7 +6,8 @@
   "scripts": {
     "start": "python3 -m http.server",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "lint": "bootlint index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/hsiaoyi0504/hsiaoyi0504.github.io",
   "devDependencies": {
+    "bootlint": "^0.15.1",
     "bootstrap": "^3.2.0",
     "disable-output-webpack-plugin": "^1.0.1",
     "jquery": "^1.11.3",
