@@ -36,9 +36,7 @@ a:hover{
 }
 
 .english-name{
-  font-size: 32px;
   font-weight: bold;
-
   font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -53,8 +51,6 @@ a:hover{
 
 .profile{
   color: #DDDDDD;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .profile-img{
@@ -70,10 +66,8 @@ a:hover{
 }
 
 .profile-info{
-  height: 275px;
   vertical-align: center;
   position: relative;
-  font-size: 18px;
   background-color: rgba(30%,30%,30%,0.5);
   border-radius: 20px;
   padding-top: 10px;
@@ -218,12 +212,11 @@ hr {
 
 #home { 
     background: url(../images/101_cut_blur.jpg) no-repeat fixed center;
-    height: auto;
+    height: 100%;
     width: 100%; 
     margin: 0 0; 
     position: relative; 
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    padding: 100px 0px;
     background-size: cover;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
@@ -268,7 +261,6 @@ hr {
 
 .education-section {
     height: auto;
-    font-size: 18px;
     background: #f7f7f7;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -287,10 +279,52 @@ hr {
 .spacer{
   width: 100%;
   height: 0px;
-  margin: 20px 0px;
   background-color: #555555 !important;
 }
 
 /* navbar fade effect */
 .navbar-fixed-top { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s;}
 .navbar-fixed-top.opaque { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s; }
+
+
+@media screen and (min-width: 992px) {
+  .profile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #home {
+    padding: 100px 0px;
+  }
+  .profile-info {
+    font-size: 18px;
+    height: 275px;
+  }
+  .english-name {
+    font-size: 32px;
+  }
+  .spacer {
+    margin: 20px 0px;
+  }
+  .education-section {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home {
+    padding: 50px 0px;
+  }
+  .profile-info {
+    font-size: 15px;
+    height: 330px;
+  }
+  .english-name {
+    font-size: 25px;
+  }
+  .spacer {
+    margin: 10px 0px;
+  }
+  .education-section {
+    font-size: 15px;
+  }
+}
