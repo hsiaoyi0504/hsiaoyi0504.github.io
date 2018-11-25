@@ -34,6 +34,7 @@ module.exports = {
         path.resolve(nodeModulesPath, 'jquery.easing/jquery.easing.1.3.js'),
         path.resolve(nodeModulesPath, 'magnific-popup/dist/jquery.magnific-popup.js'),
         path.resolve(jsFilesPath, 'scrolling-nav.js'),
+        path.resolve(jsFilesPath, 'last-modified.js'),
         path.resolve(jsFilesPath, 'main.js')
       ],
     }),
