@@ -21,7 +21,7 @@
   "homepage": "https://github.com/hsiaoyi0504/hsiaoyi0504.github.io",
   "devDependencies": {
     "bootlint": "^0.15.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "disable-output-webpack-plugin": "^1.0.1",
     "jquery": "^1.11.3",
     "jquery-migrate": "^1.2.1",
