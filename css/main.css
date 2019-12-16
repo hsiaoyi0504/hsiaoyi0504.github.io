@@ -221,7 +221,6 @@ hr {
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
-
 .about-section {
     height: auto;
     font-size: 18px;
@@ -231,10 +230,19 @@ hr {
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
+.news-section {
+  height: auto;
+  font-size: 16px;
+  background: #f7f7f7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
 .work-section {
     height: auto;
     font-size: 18px;
-    background: #ffffff;
+    background: #f7f7f7;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
@@ -252,7 +260,7 @@ hr {
 .project-section {
     height: auto;
     font-size: 16px;
-    background: #f7f7f7;
+    background: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
@@ -261,7 +269,7 @@ hr {
 
 .education-section {
     height: auto;
-    background: #f7f7f7;
+    background: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
