@@ -284,6 +284,15 @@ hr {
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
+.others-section {
+  height: auto;
+  font-size: 18px;
+  background: #f7f7f7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
 .spacer{
   width: 100%;
   height: 0px;
